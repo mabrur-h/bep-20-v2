@@ -1,0 +1,263 @@
+.game {
+    &-hero {
+        padding: 380px 0;
+        background-image: url(../../assets/backgrounds/gamfi.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 56px;
+            line-height: 59px;
+            color: #ffffff;
+            transform: translateX(70px);
+            max-width: 280px;
+
+            span {
+                color: #f7a501;
+            }
+        }
+    }
+
+    &-hero__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 637.44px;
+        height: 208.28px;
+        background-repeat: no-repeat;
+        background-image: url(../../assets/backgrounds/gamefi.png);
+    }
+
+    &-hero-bottom {
+        padding: 100px 0;
+        margin-top: -200px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 18.43%);
+
+        &__title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 27px;
+            line-height: 32px;
+            text-align: center;
+            color: #fff;
+            max-width: 1111px;
+            margin: 0 auto;
+        }
+    }
+
+    .game-strategy {
+        padding: 68px 0;
+        color: #fff;
+        background-repeat: no-repeat;
+        background-image: url(../../assets/backgrounds/strategy.png);
+        background-position: center left;
+        position: relative;
+        overflow: hidden;
+
+        &-left {
+            max-width: 850px;
+        }
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 49px;
+            line-height: 63px;
+            color: #fff;
+            margin-bottom: 44px;
+
+            span {
+                color: #f7a501;
+                font-weight: bold;
+            }
+
+            &:last-child {
+                margin-bottom: 23px;
+            }
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 30px;
+            color: #ffffff;
+
+            &:not(:last-child) {
+                margin-bottom: 42px;
+            }
+        }
+    }
+
+    .gamers {
+        margin-bottom: -150px;
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 49px;
+            line-height: 63px;
+            color: #f7a501;
+            margin-bottom: 121px;
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    .space {
+        padding: 426px 15px 206px 15px;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.1) 51.43%),
+            url(../../assets/backgrounds/space.png);
+        background-size: cover;
+        background-position: center;
+
+        &-inner {
+            background: rgba(12, 25, 71, 0.7);
+            backdrop-filter: blur(9px);
+            padding: 48px 56px 53px 56px;
+            max-width: 1032px;
+            margin: 0 auto;
+            box-sizing: border-box;
+
+            &__text {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 30px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .game{
+        &-hero {
+            padding: 300px 0;
+
+            &__title {
+                font-size: 48px !important;
+                transform: translateX(80px);
+                margin-bottom: 15px;
+            }
+        }
+
+        &-hero__content {
+            width: 507.44px !important;
+            height: 188.28px !important;
+            background-size: contain !important;
+        }
+
+        .gamers-wrapper {
+            .game-card {
+                width: 48%;
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    .game-strategy {
+        background-image: none !important;
+        &-inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .game-strategy-right {
+            img {
+                margin-top: 30px;
+                display: block;
+            }
+        }
+    }
+} 
+
+@media only screen and (max-width: 574px) {
+    .game{
+        &-hero {
+            padding: 300px 0;
+
+            &__title {
+                font-size: 22px !important;
+                transform: translateX(30px);
+                margin-bottom: 15px;
+                line-height: 24px;
+                span {
+                    display: block;
+                }
+            }
+
+            &-bottom {
+                padding-bottom: 50px;
+            }
+        }
+
+        .gamers__title {
+            font-size: 26px;
+            line-height: 29px;
+        }
+
+        &-hero__content {
+            width: 300.44px !important;
+            height: 118.28px !important;
+            background-size: contain !important;
+        }
+
+        .game-hero-bottom__title {
+            font-size: 18px;
+        }
+
+        .game-strategy {
+            &__text {
+                font-size: 16px;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+        }
+
+        .game-strategy-right {
+            img {
+                width: 300px;
+                height: 400px;
+                object-fit: contain;
+            }
+        }
+
+        .gamers-wrapper {
+            .game-card {
+                width: 100%;
+                &:not(:last-child) {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+
+        .space {
+            padding: 300px 15px 200px 15px;
+
+            .space-inner__text {
+                font-size: 18px;
+            }
+        }
+        
+    }
+}

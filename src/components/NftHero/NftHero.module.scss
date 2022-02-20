@@ -1,0 +1,232 @@
+.hero {
+    background: #1C1254;
+    padding-top: 180px;
+    background-image: url(../../assets/backgrounds/nft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about {
+    width: 60%;
+    position: relative;
+    z-index: 2;
+}
+
+.bacg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 800px;
+    height: 680px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-image: url('../../assets/backgrounds/nft-hero.png');
+}
+
+.title {
+    font-weight: 400;
+    font-size: calc(20px + 30 * ((100vw - 320px) / (1280 - 320)));
+    line-height: calc(20px + 30 * ((100vw - 320px) / (1280 - 320)));
+    color: #fff;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    max-width: 762px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 74px;
+}
+
+.golden {
+    font-weight: bold;
+    color: #F7A501;
+}
+
+.description {
+    font-family: Roboto;
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    max-width: 584px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.list {
+    padding-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.text {
+    // font-size: calc(13 * ((100vw - 320px) / (1280 - 320)));
+    font-size: 20px;
+    line-height: 30px; 
+    // line-height: calc(25 * ((100vw - 320px) / (1280 - 320)));
+    color: #DADADA;
+    width: 80%;
+}
+
+.icon {
+    display: block;
+    width: 180px;
+    height: 150px;
+}
+
+.icon::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 150px;
+    background-position: center bottom -20px;
+    background-size: cover;
+    transform: scale(3);
+    background-repeat: no-repeat;
+}
+
+.item:first-child .icon::before {
+    background-image: url('../../assets/icons/nft1.svg');
+}
+
+.item:last-child .icon::before {
+    background-image: url('../../assets/icons/nft2.svg');
+}
+
+@media screen and (max-width : 1600px) {
+    .bacg {
+        transform: translateX(12%);
+        height: 680px;
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    .bacg {
+        transform: translateX(11%);
+        height: 630px;
+    }
+}
+
+@media screen and (max-width : 960px) {
+    .bacg {
+        width: 550px;
+        transform: translateX(12%);
+        height: 465px;
+    }
+
+    .icon {
+        display: block;
+        width: 130px;
+        height: 100px;
+    }
+
+    .icon::before {
+        width: 130px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    .bacg {
+        width: 550px;
+        transform: translateX(11%);
+        height: 450px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .hero {
+        padding-top: 150px;
+    }
+    .title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .bacg {
+        width: 470px;
+        transform: translateX(12%);
+        height: 500px;
+    }
+
+    .description {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .text {
+        font-size: 9px;
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width : 660px) {
+    .bacg {
+        width: 450px;
+        transform: translateX(8%);
+        height: 500px;
+    }
+}
+
+@media screen and (max-width : 592px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .bacg {
+        position: relative;
+        transform: translateX(0%);
+        width: 150%;
+        height: 400px;
+        background-size: contain;
+    }
+
+    .icon {
+        display: block;
+        width: 100px;
+        height: 80px;
+    }
+
+    .icon::before {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 60px;
+        background-position: center bottom -15px;
+        background-size: cover;
+        transform: scale(3.5);
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width : 390px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .bacg {
+        width: 150%;
+        height: 250px;
+    }
+}

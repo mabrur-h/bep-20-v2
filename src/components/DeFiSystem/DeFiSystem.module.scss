@@ -1,0 +1,92 @@
+.box{
+    padding-bottom: 180px;
+    position: relative;
+  }
+  .dot{
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/icons/purple-dot-blur.svg');
+  }
+  .bigBg{
+    position: absolute;
+    top: -350px;
+    right: -150px;
+    z-index: 1;
+    width: 600px;
+    height: 800px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/big-blurred-bg.svg');
+  }
+  .staticBg{
+    position: absolute;
+    top: 160px;
+    right: -190px;
+    width: 600px;
+    height: 600px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/defi-fkn-img.png');
+  }
+  .texts{
+    width: 90%;
+    position: relative;
+    z-index: 5;
+  }
+  .title{
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 44px;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 75%;
+  }
+  .golden{
+    font-weight: bold;
+    color: #F7A501;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 62%;
+  }
+  @media screen and (max-width : 860px) {
+    .texts{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width : 768px) {
+      .box {
+          padding-bottom: 100px;
+      }
+    .title{
+      width: 100%;
+      font-size: 26px;
+    }
+    .text{
+      width: 100%;
+    }
+    .bigBg{
+      top: -350px;
+      right: -150px;
+      width: 600px;
+      height: 800px;
+    }
+    .staticBg{
+      top: 160px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+    }
+  }

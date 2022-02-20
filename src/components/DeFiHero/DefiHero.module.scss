@@ -1,0 +1,122 @@
+.hero {
+    background: linear-gradient(180deg, #311C54 28.26%, #0F1128 92.11%);
+    padding: 60px 0;
+    padding-top: 200px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    height: 500px;
+}
+
+.texts {
+    width: 50%;
+    padding-right: 100px;
+}
+
+.imgs {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 100px;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 54px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.golden {
+    font-weight: bold;
+    color: #F7A501;
+}
+
+.item {
+    display: inline-block;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.desc {
+    position: relative;
+    z-index: 2;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #DADADA;
+}
+
+.item::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: -280px;
+    left: -180px;
+    width: 450px;
+    height: 550px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/icons/purple-dot-blur.svg');
+}
+
+@media screen and (max-width : 968px) {
+    .hero {
+        padding-top: 150px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .item::before {
+        left: -120px;
+    }
+
+    .texts {
+        padding-right: 0;
+    }
+
+    .imgs {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width : 820px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .texts {
+        width: 100%;
+    }
+
+    .imgs {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 520px) {
+    .inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}

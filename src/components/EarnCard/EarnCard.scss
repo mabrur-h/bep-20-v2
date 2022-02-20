@@ -1,0 +1,33 @@
+.earn-card {
+    width: 24%;
+    padding: 146px 10px 34px 24px;
+    box-sizing: border-box;
+    position: relative;
+    background: #271847;
+
+    &__img {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.65);
+    }
+}
+

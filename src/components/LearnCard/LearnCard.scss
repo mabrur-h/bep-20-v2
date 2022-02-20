@@ -1,0 +1,37 @@
+.learn-card {
+    background-repeat: no-repeat;
+    background-image: url(../../assets/backgrounds/learnCard.png);
+    position: relative;
+    padding: 193px 51px 80px 35px;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 47%;
+    border-right: 1px solid #DBFF00;
+
+    &__img {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 369px;
+        height: 258px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 41px;
+        color: #FFFFFF;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}

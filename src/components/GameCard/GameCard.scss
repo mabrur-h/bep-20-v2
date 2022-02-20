@@ -1,0 +1,25 @@
+.game-card {
+    background: #271847;
+    width: 22%;
+    padding: 148px 5px 63px 26px;
+    box-sizing: border-box;
+    position: relative;
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}

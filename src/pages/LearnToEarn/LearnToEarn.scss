@@ -1,0 +1,183 @@
+.learn-earn {
+    padding: 259px 0 100px 0;
+
+    &-hero {
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 71px;
+            line-height: 74px;
+            text-align: center;
+            color: #F7A501;
+            max-width: 765px;
+            margin: 0 auto;
+            margin-bottom: 120px;
+        }
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            // background-color: #000;
+            background-color: transparent;
+            backdrop-filter: blur(337px);
+            margin-bottom: -100px;
+        }
+    }
+
+    .learn-earn-bottom {
+        padding: 349px 0 147px 0;
+        background: linear-gradient(180deg, #311C54 28.26%, #0F1128 92.11%);
+
+        &__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 55px;
+            line-height: 67px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 35px;
+            position: relative;
+
+            span {
+                color: #F7A501;
+                max-width: 1037px;
+            }
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            max-width: 845px;
+            margin: 0 auto;
+            color: #FFFFFF;
+            margin-bottom: 84px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 41px;
+            color: #FFFFFF;
+            margin-bottom: 103px;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .learn-earn {
+        padding: 150px 0 100px 0;
+        &-hero {
+            &__title {
+                font-style: normal;
+                line-height: 40px;
+                max-width: 765px;
+                margin: 0 auto;
+                margin-bottom: 80px;
+                max-width: 600px;
+                font-size: 32px !important;
+                text-align: center;
+            }
+    
+            &-inner {
+                display: flex;
+                justify-content: space-between;
+                // background-color: #000;
+                background-color: transparent;
+                backdrop-filter: blur(337px);
+                margin-bottom: -100px;
+            }
+
+            .learn-earn-bottom {
+                padding-top: 200px;
+                padding-bottom: 70px;
+            }
+
+            &-inner {
+                flex-direction: column;
+
+                .learn-card {
+                    width: 100%;
+                    &:first-child {
+                        margin-bottom: 80px;
+                    }
+
+                    &__title {
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+
+                    &__text {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .learn-earn-bottom__title {
+                font-size: 32px;
+                max-width: 400px;
+                margin: auto;
+                line-height: 42px;
+                margin-bottom: 30px;
+            }
+
+            .learn-earn-bottom__text {
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+
+            .learn-earn-bottom__subtitle {
+                font-size: 24px;
+                max-width: 400px;
+            }
+
+            .learn-earn-bottom-wrapper {
+                .earn-card {
+                    width: 49%;
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .learn-card {
+        &__img {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+        }
+    }
+
+    .learn-earn-bottom-wrapper {
+        .earn-card {
+            width: 100% !important;
+            margin-bottom: 80px !important;
+            box-shadow: 0 0 21px 0 #000;
+            padding-top: 120px;
+
+            img {
+                object-fit: contain;
+                width: 100px;
+                height: 100px;
+                top: -30px !important;
+            }
+        }
+    }
+}
